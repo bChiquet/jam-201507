@@ -26,6 +26,6 @@ public class EmployeeRepositoryTests {
 
     @Test
     public void firstEmployeeNickNameTest() throws Exception {
-        assertEquals("johndoe", repository.findOne(0L).getNickname());
+        assertEquals("johndoe", repository.findOne(1L).getNickname());
     }
 }
