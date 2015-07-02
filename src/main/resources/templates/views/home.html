@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+    <head>
+        <!--<link th:fragment="css" th:href="@{/assets/css/home.css}" rel="stylesheet" type="text/css"/>-->
+    </head>
+    <body>
+        <div th:fragment="content">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 id="heading">Hello World!</h1>
+                    <p>This is the supa fucking new web application</p>
+                    <p><a class="btn btn-primary btn-lg" th:href="@{about}" role="button">Learn more »</a></p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                        <p><a class="btn btn-default" th:href="@{home}" role="button">View details »</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                        <p><a class="btn btn-default" th:href="@{home}" role="button">View details »</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-default" th:href="@{home}" role="button">View details »</a></p>
+                    </div>
+                </div>
+            </div>
+            <script type="application/javascript">
+                $("#home-link").addClass("active");
+            </script>
+        </div>
+    </body>
+</html>

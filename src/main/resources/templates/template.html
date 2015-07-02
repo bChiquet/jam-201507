@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Simple Web Application"/>
+        <meta name="author" content="Arolla Development Team"/>
+        <!--<link th:href="@{/assets/img/favicon.ico}" rel="shortcut icon" type="image/png"/>-->
+        <title>Web Application</title>
+        <!-- Bootstrap -->
+        <link th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+        <link th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css}" rel="stylesheet" type="text/css"/>
+        <script th:src="@{/webjars/bootstrap/3.3.4/js/bootstrap.min.js}"></script>
+        <script th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script th:src="@{/webjars/html5shiv/3.7.2/html5shiv.min.js}"></script>
+        <script th:src="@{/webjars/respond/1.4.2/dest/respond.min.js}"></script>
+        <![endif]-->
+        <!--<link th:fragment="css" th:href="@{/assets/css/template.css}" rel="stylesheet" type="text/css"/>-->
+        <!--<link th:replace="${view} :: css"/>-->
+    </head>
+    <body>
+        <div th:replace="fragments/header :: header"></div>
+        <div th:replace="${view} :: content"></div>
+        <div th:replace="fragments/footer :: footer"></div>
+    </body>
+</html>

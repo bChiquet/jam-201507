@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.4.RELEASE")
+    }
+}
+
+apply plugin: "java"
+apply plugin: "spring-boot"
+
+jar {
+    baseName = "jam-201507"
+    version =  "0.0.1-SNAPSHOT"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.webjars:bootstrap:3.3.4")
+    compile("org.webjars:jquery:2.1.4")
+    compile("org.webjars:html5shiv:3.7.2")
+    compile("org.webjars:respond:1.4.2")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
