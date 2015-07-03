@@ -14,9 +14,3 @@ hs_err_pid*
 # IntelliJ IDEA Project files
 *.iml
 .idea/
-
-# Gradle build files
-.gradle/
-gradle/
-gradlew
-gradlew.bat
